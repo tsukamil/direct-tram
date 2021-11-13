@@ -1,0 +1,6 @@
+<div class="modal" ngClass="{{trams ? 'modal--success' : 'modal--error'}}">
+    <div class="modal__container">
+        <p *ngIf="trams">Dobra wiadomość, wybierz tramwaj nr: <span>{{trams}}</span></p>
+        <p *ngIf="!trams">Niestety, nie możemy znaleźć połączenia bezpośredniego.</p>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 50vh;
+    padding: 20px;
+    background: white;
+    border: 2px solid #25232c;
+    border-bottom: 0;
+    color: #282732;
+    text-align: center;
+    transition: bottom .3s;
+
+    span {
+        display: block;
+        font-size: 32px;
+    }
+    &--success {
+        background: #c3e9c3;
+        color: green;
+    }
+
+    &--error {
+        background: #e4c3c3;
+        color: red;
+    }
+}

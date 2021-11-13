@@ -1,0 +1,26 @@
+select {
+    background: #25232c;
+    color: white;
+    min-height: 32px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    min-width: 200px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 30px;
+    background: #fafafa;
+    color: #514f70;
+    height: 32px;
+    width: 100%;
+    border: 0;
+    font-size: 16px;
+    border: 2px solid #25232c;
+}
