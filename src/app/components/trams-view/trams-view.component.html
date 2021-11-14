@@ -1,14 +1,16 @@
-<div>
-    <span class="label">Skąd:</span>
-    <select [(ngModel)]="from">
-        <option *ngFor="let tramstop of tramstops let i = index" [value]="i">{{tramstop.name}}</option>
-    </select>
+<div class="trams">
+    <div>
+        <span class="label">Skąd:</span>
+        <select [(ngModel)]="from">
+            <option *ngFor="let tramstop of tramstops let i = index" [value]="i">{{tramstop.name}}</option>
+        </select>
+    </div>
+    <div>
+        <span class="label">Dokąd:</span>
+        <select [(ngModel)]="to">
+            <option *ngFor="let tramstop of tramstops let i = index" [value]="i">{{tramstop.name}}</option>
+        </select>
+    </div>
+    <app-button text="Sprawdź" (btnClick)="check()"></app-button>
+    <app-modal *ngIf="show" trams="{{tramsOk}}"></app-modal>
 </div>
-<div>
-    <span class="label">Dokąd:</span>
-    <select [(ngModel)]="to">
-        <option *ngFor="let tramstop of tramstops let i = index" [value]="i">{{tramstop.name}}</option>
-    </select>
-</div>
-<button (click)="check()">Sprawdź</button>
-<app-modal *ngIf="show" trams="{{tramsOk}}"></app-modal>

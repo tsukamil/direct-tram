@@ -13,5 +13,11 @@ fa-icon {
 h1 {
     font-size: 32px;
     color: #c9c8d5;
+    overflow: hidden;
 
+}
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 20px;
+    }
 }

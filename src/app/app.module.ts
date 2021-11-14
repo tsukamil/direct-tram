@@ -8,13 +8,15 @@ import { TramsViewComponent } from './components/trams-view/trams-view.component
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModalComponent } from './components/modal/modal.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TramsViewComponent,
-    ModalComponent
+    ModalComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
